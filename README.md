@@ -9,6 +9,7 @@ Improve the model deisng to include object id's so I don't need to reference cop
 Design of the UI is functional but not good looking.
 Return specific failure exceptions from converters when incorrect method signature is used.
 Implement a validation system when creating measurement system.
+Editing Measurement Systems would be nice to have in the future, along with removing.
 
 General design comments:
 
