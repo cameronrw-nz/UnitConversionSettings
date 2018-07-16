@@ -1,0 +1,83 @@
+﻿<UserControl x:Class="UnitConversionSettings.Views.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UnitConversionSettings.Views"
+             xmlns:unitConversion="clr-namespace:UnitConversionSettings.UnitConversion"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             d:DataContext="{d:DesignInstance unitConversion:SettingsViewModel}">
+    <UserControl.Resources>
+        <Style TargetType="{x:Type ComboBox}">
+            <Setter Property="Width" Value="156"/>
+            <Setter Property="Margin" Value="4,4,4,4"/>
+        </Style>
+
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="Margin" Value="4,4,4,4"/>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+        </Style>
+
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="4,4,4,4"/>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="ComboBox" BasedOn="{StaticResource {x:Type ComboBox}}">
+                <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+            </Style>
+        </Grid.Resources>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="0" Grid.Row="0" Text="Settings" />
+        <ComboBox Grid.Column="1" Grid.Row="0"
+                  ItemsSource="{Binding Path=MeasurementSystems, NotifyOnSourceUpdated=True}" 
+                  SelectedItem="{Binding Path=SelectedMeasurementSystem}"
+                  DisplayMemberPath="Name"
+                  SelectedValuePath="Name"/>
+        <Button  Grid.Column="2" Grid.Row="0" Command="{Binding CreateMeasurementSystemCommand}" 
+                 HorizontalAlignment="Left">
+            <TextBlock Text="Add Measurement System"></TextBlock>
+        </Button>
+
+        <TextBlock Grid.Column="0" Grid.Row="1" Text="Flight Distance" />
+        <ComboBox Grid.Column="1" Grid.Row="1"
+                  ItemsSource="{Binding DistanceUnits, NotifyOnSourceUpdated=True}" 
+                  SelectedItem="{Binding SelectedDistanceUnit}"
+                  DisplayMemberPath="Name" />
+
+        <TextBlock Grid.Column="0" Grid.Row="2" Text="Total Area" />
+        <ComboBox Grid.Column="1" Grid.Row="2"
+                  ItemsSource="{Binding Areas, NotifyOnSourceUpdated=True}" 
+                  SelectedItem="{Binding SelectedArea}"
+                  DisplayMemberPath="Name"></ComboBox>
+
+        <TextBlock Grid.Column="0" Grid.Row="3" Text="Charging Rate" />
+        <ComboBox Grid.Column="1" Grid.Row="3"
+                  ItemsSource="{Binding ChargingRates, NotifyOnSourceUpdated=True}" 
+                  SelectedValue="{Binding SelectedChargingRateArea}"
+                  SelectedValuePath="Area"></ComboBox>
+
+        <TextBlock Grid.Column="0" Grid.Row="4" Text="Invoice Report" />
+        <ComboBox Grid.Column="1" Grid.Row="4"
+                  ItemsSource="{Binding InvoiceReports, NotifyOnSourceUpdated=True}" 
+                  SelectedValue="{Binding SelectedInvoiceReportArea}"
+                  SelectedValuePath="Area"></ComboBox>
+
+    </Grid>
+</UserControl>

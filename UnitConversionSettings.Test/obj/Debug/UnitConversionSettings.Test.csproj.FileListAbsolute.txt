@@ -1,0 +1,17 @@
+D:\Projects\UnitConversionSettings\UnitConversionSettings.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Projects\UnitConversionSettings\UnitConversionSettings.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Projects\UnitConversionSettings\UnitConversionSettings.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Projects\UnitConversionSettings\UnitConversionSettings.Test\bin\Debug\UnitConversionSettings.Test.dll
+D:\Projects\UnitConversionSettings\UnitConversionSettings.Test\bin\Debug\UnitConversionSettings.Test.pdb
+D:\Projects\UnitConversionSettings\UnitConversionSettings.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Projects\UnitConversionSettings\UnitConversionSettings.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Projects\UnitConversionSettings\UnitConversionSettings.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Projects\UnitConversionSettings\UnitConversionSettings.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Projects\UnitConversionSettings\UnitConversionSettings.Test\obj\Debug\UnitConversionSettings.Test.csprojResolveAssemblyReference.cache
+D:\Projects\UnitConversionSettings\UnitConversionSettings.Test\obj\Debug\UnitConversionSettings.Test.csproj.CoreCompileInputs.cache
+D:\Projects\UnitConversionSettings\UnitConversionSettings.Test\obj\Debug\UnitConversionSettings.Test.csproj.CopyComplete
+D:\Projects\UnitConversionSettings\UnitConversionSettings.Test\obj\Debug\UnitConversionSettings.Test.dll
+D:\Projects\UnitConversionSettings\UnitConversionSettings.Test\obj\Debug\UnitConversionSettings.Test.pdb
+D:\Projects\UnitConversionSettings\UnitConversionSettings.Test\bin\Debug\UnitConversionSettings.exe
+D:\Projects\UnitConversionSettings\UnitConversionSettings.Test\bin\Debug\UnitConversionSettings.pdb
+D:\Projects\UnitConversionSettings\UnitConversionSettings.Test\bin\Debug\UnitConversionSettings.exe.config
