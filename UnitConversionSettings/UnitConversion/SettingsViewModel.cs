@@ -133,6 +133,7 @@ namespace UnitConversionSettings.UnitConversion
         {
             var measurementSystemView = new AddNewMeasurementSystemView();
             measurementSystemView.DataContext = new MeasurementSystemViewModel(new MeasurementSystemModel());
+
             if (measurementSystemView.ShowDialog() == true)
             {
                 MeasurementSystems.Add(((MeasurementSystemViewModel)measurementSystemView.DataContext).MeasurementSystem);

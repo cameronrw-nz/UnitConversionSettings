@@ -183,9 +183,10 @@ namespace UnitConversionSettings.UnitConversion
         {
             var selectedAreaDistance =
                 MeasurementSystem.DistanceUnits.FirstOrDefault(unit => unit.Name == SelectedAreaDistance);
-            MeasurementSystem.Areas.Add(new AreaModel(AreaName, "23", 0, selectedAreaDistance));
+            MeasurementSystem.Areas.Add(new AreaModel(AreaName, AreaSuffix, AreaWidth ?? 0, selectedAreaDistance));
 
             AreaName = null;
+            AreaWidth = null;
             AreaWidth = null;
             SelectedAreaDistance = null;
 
