@@ -60,6 +60,7 @@
     <Compile Include="Converters\DistanceUnitConverter.cs" />
     <Compile Include="Models\UnitConversionRate.cs" />
     <Compile Include="Models\SettingsModel.cs" />
+    <Compile Include="Models\UnitModel.cs" />
     <Compile Include="UnitConversion\RelayCommand.cs" />
     <Compile Include="UnitConversion\TestData.cs" />
     <Compile Include="Views\AddNewMeasurementSystemView.xaml.cs">

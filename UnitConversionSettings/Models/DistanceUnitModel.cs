@@ -1,15 +1,10 @@
 ﻿namespace UnitConversionSettings.Models
 {
-    public class DistanceUnitModel
+    public class DistanceUnitModel : UnitModel
     {
-        public DistanceUnitModel(string name, string unitSuffix)
+        public DistanceUnitModel(string name, string unitSuffix) 
+            : base(name, unitSuffix)
         {
-            Name = name;
-            UnitSuffix = unitSuffix;
         }
-
-        public string Name { get; }
-
-        public string UnitSuffix { get; }
     }
 }
